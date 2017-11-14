@@ -8,10 +8,8 @@ function crypto(f) {
                 for (var p = 0; p < this.result.length; p++) {
                     iFile[p] = this.result.charCodeAt(p);
                 };
-                console.log(iFile.join(','));
                 var icode = parseInt(iFile.length / 3);
                 var cw = ch = parseInt(Math.sqrt(icode) + 1);
-                alert(cw);
                 var c = document.getElementById("canvas");
                 (cw * (ch - 1) > icode) ? ch-- : ch;
                 c.width = cw;
